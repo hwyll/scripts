@@ -9,7 +9,7 @@
 #
 # Options:
 #   --dry-run            Show files that would be converted without converting
-#   --bitrate, -b RATE   MP3 bitrate (default: 320k)
+#   --bitrate, -b RATE   MP3 bitrate (default: V0)
 #                        CBR: 320k, 256k, 192k, 128k
 #                        VBR: V0 (best), V2 (high), V4 (medium), V6 (acceptable)
 #   --overwrite          Overwrite existing MP3 files (default: skip existing)
@@ -37,7 +37,7 @@ readonly BLUE='\033[0;34m'
 readonly NC='\033[0m' # No Color
 
 # Default configuration
-readonly DEFAULT_BITRATE="320k"
+readonly DEFAULT_BITRATE="V0"
 OVERWRITE_EXISTING=false
 DRY_RUN=false
 
@@ -817,7 +817,7 @@ Usage: $0 [OPTIONS] <source_directory> <destination_directory>
 
 Options:
   --dry-run            Test run without converting files
-  --bitrate, -b RATE   MP3 bitrate (default: 320k)
+  --bitrate, -b RATE   MP3 bitrate (default: V0)
                        CBR: 320k, 256k, 192k, 128k
                        VBR: V0 (best), V2 (high), V4 (medium), V6 (acceptable)
   --overwrite          Overwrite existing MP3 files (default: skip existing)
